@@ -8,10 +8,11 @@ export default {
     icon: 'icon-tab',
     label,
     name,
+    children: 'table-column',
     mask: false,
     rule() {
         return {
-            type: 'table-options',
+            type: 'custom-table',
             field:  uniqueId(),
             value:[{}],
             children: [],

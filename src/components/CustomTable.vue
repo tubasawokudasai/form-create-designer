@@ -6,14 +6,7 @@
           border
           size="small"
           style="width: 100%">
-        <template v-for="(col,idx) in column" :key="col.label + idx">
-          <el-table-column :label="col.label">
-            <template #default="scope">
-              <el-input :type="col.type" size="small" :modelValue="scope.row[col.key] || ''"
-                        @Update:modelValue="(n)=>(scope.row[col.key] = n, onInput(scope.row))"></el-input>
-            </template>
-          </el-table-column>
-        </template>
+        <slot :value = "1234567"/>
         <el-table-column min-width="50" align="center" fixed="right" :label="t('tableOptions.handle')">
 
           <template #default="scope">

@@ -25,6 +25,7 @@ import button from './button';
 import editor from './editor';
 import group from './group';
 import table from './table';
+import tableColum from './table-column';
 
 
 const ruleList = {
@@ -55,6 +56,7 @@ const ruleList = {
     [editor.name]: editor,
     [group.name]: group,
     [table.name]: table,
+    [tableColum.name]: tableColum,
 
 };
 

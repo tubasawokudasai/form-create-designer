@@ -26,6 +26,8 @@ export default defineComponent({
 
         return h(draggable, subRule, {
             item: ({element}) => {
+                const a = keys[element.__fc__.key + 'fc']
+                console.log(a)
                 return element?.__fc__?.key ? h('div', {}, keys[element.__fc__.key + 'fc']) : undefined;
             }
         });
